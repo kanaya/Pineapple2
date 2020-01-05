@@ -121,8 +121,8 @@ Pineapple II has followirng ports.
 |               | Vcc+R  | ---           | M4                | B10                |
 |               | Vout   | ---           | Gx-1/gx-T         | F01, F07, F13, F19 |
 | **Reset**     | RST    | RST           | SW1               | B03                |
-| **Internal**  | VR     | A4            | Variable resistor | NC                 |
-|               | 1W     | A5            | Thermal sensor    | NC                 |
+| **Internal**  | THS    | A4            | Thermal sensor    | NC                 |
+|               | RLY    | A5            | Thermal breaker   | NC                 |
 
 ## Board Connectors
 ### Front Connector (MIL 34p Connector)
