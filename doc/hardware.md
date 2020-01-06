@@ -115,11 +115,13 @@ Pineapple II has followirng ports.
 |               | MISO   | MISO          | M8                | B14                |
 | **Power**     | DC+12V | VIN           | P1                | B01                |
 |               | GND    | GND           | P2, M2, Gx-2/gx-S | F02, F08, F14, F20 |
-|               |        |               |                   | F26, F28, F30, F32 |
-|               |        |               |                   | F34, B02, B05, B08 |
+|               |        |               |                   | B02, B05, B08, B20 |
+|               | GND+R  | ---           |                   | F26, F28, F30, F32 |
+|               |        |               |                   | F34                |
 |               | Vcc    | VCC           | M1                | B07                |
 |               | Vcc+R  | ---           | M4                | B10                |
 |               | Vout   | ---           | Gx-1/gx-T         | F01, F07, F13, F19 |
+|               | Vdd    | 3V            | ---               | B19                |
 | **Reset**     | RST    | RST           | SW1               | B03                |
 | **Internal**  | THS    | A4            | Thermal sensor    | NC                 |
 |               | RLY    | A5            | Thermal breaker   | NC                 |
@@ -186,6 +188,6 @@ Pineapple II has followirng ports.
 | B16 | MIDI OUT2 Cold | NC         |
 | B17 | MIDI THRU Hot  | NC         |
 | B18 | MIDI THRU Cold | NC         |
-| B19 | Reserved       | NC         |
-| B20 | Reserved       | NC         |
+| B19 | Vdd            | NC         |
+| B20 | GND            | NC         |
 
