@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17980,14 +17980,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </bus>
 <bus name="INTL:RLY,THS">
 <segment>
-<wire x1="223.52" y1="172.72" x2="190.5" y2="172.72" width="0.762" layer="92"/>
-<wire x1="190.5" y1="172.72" x2="187.96" y2="170.18" width="0.762" layer="92" curve="90"/>
-<wire x1="187.96" y1="170.18" x2="187.96" y2="132.08" width="0.762" layer="92"/>
-<wire x1="187.96" y1="132.08" x2="185.42" y2="129.54" width="0.762" layer="92" curve="-90"/>
-<wire x1="185.42" y1="129.54" x2="180.34" y2="129.54" width="0.762" layer="92"/>
-<wire x1="180.34" y1="129.54" x2="177.8" y2="132.08" width="0.762" layer="92" curve="-90"/>
-<wire x1="177.8" y1="132.08" x2="177.8" y2="218.44" width="0.762" layer="92"/>
-<label x="180.34" y="129.54" size="1.778" layer="95"/>
+<wire x1="223.52" y1="172.72" x2="180.34" y2="172.72" width="0.762" layer="92"/>
+<wire x1="180.34" y1="172.72" x2="177.8" y2="175.26" width="0.762" layer="92" curve="-90"/>
+<wire x1="177.8" y1="175.26" x2="177.8" y2="218.44" width="0.762" layer="92"/>
+<label x="180.34" y="172.72" size="1.778" layer="95"/>
 </segment>
 </bus>
 <bus name="SERIAL:RX,TX">
