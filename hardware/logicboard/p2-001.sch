@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12644,12 +12644,41 @@ Based on the following sources:
 <text x="-8.89" y="-3.175" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-8.89" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
+<package name="RN-5" urn="urn:adsk.eagle:footprint:24948/1" library_version="1">
+<description>&lt;b&gt;RESISTOR NETWORK&lt;/b&gt;</description>
+<wire x1="6.35" y1="-1.27" x2="6.35" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-1.27" x2="-5.715" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="1.27" x2="-5.715" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-4.445" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="6.35" y1="1.27" x2="-3.81" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.27" x2="-4.445" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="-1.27" x2="-3.81" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-6.35" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.27" x2="6.35" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.6896" y1="0.6096" x2="-4.4704" y2="-0.6096" width="0.1524" layer="51"/>
+<wire x1="-5.6896" y1="-0.6096" x2="-4.4704" y2="0.6096" width="0.1524" layer="51"/>
+<pad name="1" x="-5.08" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="5.08" y="0" drill="0.8128" shape="long" rot="R90"/>
+<text x="-3.81" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="RN-9" urn="urn:adsk.eagle:package:24977/1" type="box" library_version="2">
 <description>RESISTOR NETWORK</description>
 <packageinstances>
 <packageinstance name="RN-9"/>
+</packageinstances>
+</package3d>
+<package3d name="RN-5" urn="urn:adsk.eagle:package:24976/1" type="box" library_version="1">
+<description>RESISTOR NETWORK</description>
+<packageinstances>
+<packageinstance name="RN-5"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -12670,6 +12699,19 @@ Based on the following sources:
 <pin name="7" x="30.48" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="8" x="35.56" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="9" x="40.64" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="RN04" urn="urn:adsk.eagle:symbol:24947/1" library_version="1">
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-4.318" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="10.16" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="15.24" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="20.32" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -12701,6 +12743,34 @@ Based on the following sources:
 <attribute name="OC_FARNELL" value="unknown" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
 <attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RN04" urn="urn:adsk.eagle:component:24990/1" prefix="RN" uservalue="yes" library_version="1">
+<description>&lt;b&gt;RESISTOR NETWORK&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="RN04" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="RN-5">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+<connect gate="1" pin="3" pad="3"/>
+<connect gate="1" pin="4" pad="4"/>
+<connect gate="1" pin="5" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:24976/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -17264,6 +17334,67 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="pinhead" urn="urn:adsk.eagle:library:325">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1X01" urn="urn:adsk.eagle:footprint:22382/1" library_version="3">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="1X01" urn="urn:adsk.eagle:package:22485/2" type="model" library_version="3">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X01"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="PINHD1" urn="urn:adsk.eagle:symbol:22381/1" library_version="3">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PINHD-1X1" urn="urn:adsk.eagle:component:22540/2" prefix="JP" uservalue="yes" library_version="3">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X01">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22485/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17273,11 +17404,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <class number="0" name="default" width="0.1524" drill="0.1524">
 <clearance class="0" value="0.1524"/>
 </class>
-<class number="1" name="gnd" width="0.1524" drill="0.1524">
+<class number="1" name="gnd" width="0.6096" drill="0.1524">
 <clearance class="1" value="0.1524"/>
 </class>
 <class number="2" name="power" width="0.6096" drill="0.1524">
 <clearance class="2" value="0.1524"/>
+</class>
+<class number="3" name="analog" width="0.3048" drill="0.1524">
+<clearance class="3" value="0.1524"/>
 </class>
 </classes>
 <parts>
@@ -17312,7 +17446,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="VDD1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device=""/>
 <part name="VDD2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VDD" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
-<part name="RN2" library="resistor-net" library_urn="urn:adsk.eagle:library:343" deviceset="RN08" device="" package3d_urn="urn:adsk.eagle:package:24977/1"/>
+<part name="RN2" library="resistor-net" library_urn="urn:adsk.eagle:library:343" deviceset="RN08" device="" package3d_urn="urn:adsk.eagle:package:24977/1" value="330"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="U1" library="SparkFun-Sensors" deviceset="DS18B20" device=""/>
@@ -17320,8 +17454,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="T1" library="transistor" library_urn="urn:adsk.eagle:library:402" deviceset="2SC1815" device="" package3d_urn="urn:adsk.eagle:package:29929/2"/>
 <part name="D2" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="DIODE" device="-1N4148" package3d_urn="urn:adsk.eagle:package:38452/1" value=""/>
-<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:25955/1"/>
-<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:25955/1"/>
+<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:25955/1" value="1k"/>
+<part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:25955/1" value="47k"/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
@@ -17331,7 +17465,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
 <part name="C5" library="rcl" deviceset="C-US" device="025-025X050" value="103"/>
-<part name="RN3" library="resistor-net" library_urn="urn:adsk.eagle:library:343" deviceset="RN08" device="" package3d_urn="urn:adsk.eagle:package:24977/1"/>
+<part name="RN3" library="resistor-net" library_urn="urn:adsk.eagle:library:343" deviceset="RN08" device="" package3d_urn="urn:adsk.eagle:package:24977/1" value="4.7k"/>
+<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2" value="GNDPIN"/>
+<part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
+<part name="RN4" library="resistor-net" library_urn="urn:adsk.eagle:library:343" deviceset="RN04" device="" package3d_urn="urn:adsk.eagle:package:24976/1" value="Optional"/>
 </parts>
 <sheets>
 <sheet>
@@ -17763,24 +17901,38 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="121.92" y="187.96" size="1.778" layer="95"/>
 <attribute name="VALUE" x="121.92" y="181.102" size="1.778" layer="96"/>
 </instance>
+<instance part="JP1" gate="G$1" x="226.06" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="222.885" y="24.13" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="231.14" y="24.13" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY23" gate="GND" x="226.06" y="10.16" smashed="yes">
+<attribute name="VALUE" x="224.155" y="6.985" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY24" gate="G$1" x="226.06" y="248.92" smashed="yes">
+<attribute name="VALUE" x="224.155" y="252.095" size="1.778" layer="96"/>
+</instance>
+<instance part="RN4" gate="1" x="233.68" y="226.06" smashed="yes">
+<attribute name="NAME" x="231.14" y="228.6" size="1.778" layer="95"/>
+<attribute name="VALUE" x="231.14" y="221.742" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="SPI:CLK,CS,MISO,MOSI">
 <segment>
 <wire x1="200.66" y1="93.98" x2="195.58" y2="93.98" width="0.762" layer="92"/>
 <wire x1="195.58" y1="93.98" x2="193.04" y2="96.52" width="0.762" layer="92" curve="-90"/>
-<wire x1="193.04" y1="96.52" x2="193.04" y2="175.26" width="0.762" layer="92"/>
-<wire x1="193.04" y1="175.26" x2="195.58" y2="177.8" width="0.762" layer="92" curve="-90"/>
-<wire x1="195.58" y1="177.8" x2="261.62" y2="177.8" width="0.762" layer="92"/>
-<wire x1="261.62" y1="177.8" x2="264.16" y2="175.26" width="0.762" layer="92" curve="-90"/>
-<wire x1="264.16" y1="175.26" x2="264.16" y2="124.46" width="0.762" layer="92"/>
+<wire x1="193.04" y1="96.52" x2="193.04" y2="180.34" width="0.762" layer="92"/>
+<wire x1="193.04" y1="180.34" x2="195.58" y2="182.88" width="0.762" layer="92" curve="-90"/>
+<wire x1="195.58" y1="182.88" x2="259.08" y2="182.88" width="0.762" layer="92"/>
+<wire x1="259.08" y1="182.88" x2="261.62" y2="180.34" width="0.762" layer="92" curve="-90"/>
+<wire x1="261.62" y1="180.34" x2="261.62" y2="124.46" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="GPIORST:GPIO,RST">
 <segment>
-<wire x1="215.9" y1="104.14" x2="261.62" y2="104.14" width="0.762" layer="92"/>
-<wire x1="261.62" y1="104.14" x2="264.16" y2="106.68" width="0.762" layer="92" curve="90"/>
-<wire x1="264.16" y1="106.68" x2="264.16" y2="111.76" width="0.762" layer="92"/>
+<wire x1="215.9" y1="104.14" x2="259.08" y2="104.14" width="0.762" layer="92"/>
+<wire x1="259.08" y1="104.14" x2="261.62" y2="106.68" width="0.762" layer="92" curve="90"/>
+<wire x1="261.62" y1="106.68" x2="261.62" y2="111.76" width="0.762" layer="92"/>
 </segment>
 </bus>
 <bus name="I2C:SCL,SDA">
@@ -17805,14 +17957,17 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </bus>
 <bus name="ANALOG:A1,A2,A3,A4">
 <segment>
-<wire x1="231.14" y1="172.72" x2="251.46" y2="172.72" width="0.762" layer="92"/>
-<wire x1="251.46" y1="172.72" x2="254" y2="170.18" width="0.762" layer="92" curve="-90"/>
-<wire x1="254" y1="170.18" x2="254" y2="116.84" width="0.762" layer="92"/>
-<wire x1="254" y1="116.84" x2="251.46" y2="114.3" width="0.762" layer="92" curve="-90"/>
-<wire x1="251.46" y1="114.3" x2="127" y2="114.3" width="0.762" layer="92"/>
+<wire x1="228.6" y1="177.8" x2="254" y2="177.8" width="0.762" layer="92"/>
+<wire x1="254" y1="177.8" x2="256.54" y2="175.26" width="0.762" layer="92" curve="-90"/>
+<wire x1="256.54" y1="175.26" x2="256.54" y2="116.84" width="0.762" layer="92"/>
+<wire x1="256.54" y1="116.84" x2="254" y2="114.3" width="0.762" layer="92" curve="-90"/>
+<wire x1="254" y1="114.3" x2="127" y2="114.3" width="0.762" layer="92"/>
 <wire x1="127" y1="114.3" x2="124.46" y2="111.76" width="0.762" layer="92" curve="90"/>
 <wire x1="124.46" y1="111.76" x2="124.46" y2="96.52" width="0.762" layer="92"/>
 <label x="180.34" y="114.3" size="1.778" layer="95"/>
+<wire x1="228.6" y1="177.8" x2="226.06" y2="180.34" width="0.762" layer="92" curve="-90"/>
+<wire x1="226.06" y1="180.34" x2="226.06" y2="218.44" width="0.762" layer="92"/>
+<label x="231.14" y="177.8" size="1.778" layer="95"/>
 </segment>
 </bus>
 <bus name="DETECT:D1,D2,D3,D4">
@@ -17844,7 +17999,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </bus>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
@@ -17958,6 +18113,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="190.5" y1="213.36" x2="187.96" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="213.36" x2="187.96" y2="203.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="SUPPLY23" gate="GND" pin="GND"/>
+<wire x1="226.06" y1="27.94" x2="226.06" y2="12.7" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="2">
 <segment>
@@ -18026,6 +18186,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="190.5" y1="223.52" x2="187.96" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="223.52" x2="187.96" y2="246.38" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SUPPLY24" gate="G$1" pin="VCC"/>
+<wire x1="226.06" y1="246.38" x2="226.06" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="1" pin="1"/>
+<wire x1="226.06" y1="226.06" x2="228.6" y2="226.06" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="MIDIINSND" class="0">
 <segment>
@@ -18060,7 +18226,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="IC2" gate="A" pin="O"/>
 </segment>
 </net>
-<net name="12V" class="2">
+<net name="+12V" class="2">
 <segment>
 <pinref part="MC1" gate="G$1" pin="9V"/>
 <wire x1="208.28" y1="165.1" x2="208.28" y2="157.48" width="0.1524" layer="91"/>
@@ -18147,34 +18313,34 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </segment>
 <segment>
 <pinref part="SV2" gate="-12" pin="S"/>
-<wire x1="264.16" y1="134.62" x2="266.7" y2="132.08" width="0.1524" layer="91" curve="90"/>
-<wire x1="266.7" y1="132.08" x2="271.78" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="134.62" x2="264.16" y2="132.08" width="0.1524" layer="91" curve="90"/>
+<wire x1="264.16" y1="132.08" x2="271.78" y2="132.08" width="0.1524" layer="91"/>
 <label x="266.7" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CLK" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="SCK"/>
-<wire x1="205.74" y1="177.8" x2="203.2" y2="175.26" width="0.1524" layer="91" curve="90"/>
-<wire x1="203.2" y1="175.26" x2="203.2" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="182.88" x2="203.2" y2="180.34" width="0.1524" layer="91" curve="90"/>
+<wire x1="203.2" y1="180.34" x2="203.2" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SV2" gate="-13" pin="S"/>
-<wire x1="264.16" y1="129.54" x2="266.7" y2="127" width="0.1524" layer="91" curve="90"/>
-<wire x1="266.7" y1="127" x2="271.78" y2="127" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="129.54" x2="264.16" y2="127" width="0.1524" layer="91" curve="90"/>
+<wire x1="264.16" y1="127" x2="271.78" y2="127" width="0.1524" layer="91"/>
 <label x="266.7" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="MISO"/>
-<wire x1="208.28" y1="177.8" x2="205.74" y2="175.26" width="0.1524" layer="91" curve="90"/>
-<wire x1="205.74" y1="175.26" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="182.88" x2="205.74" y2="180.34" width="0.1524" layer="91" curve="90"/>
+<wire x1="205.74" y1="180.34" x2="205.74" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SV2" gate="-14" pin="S"/>
-<wire x1="264.16" y1="124.46" x2="266.7" y2="121.92" width="0.1524" layer="91" curve="90"/>
-<wire x1="266.7" y1="121.92" x2="271.78" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="124.46" x2="264.16" y2="121.92" width="0.1524" layer="91" curve="90"/>
+<wire x1="264.16" y1="121.92" x2="271.78" y2="121.92" width="0.1524" layer="91"/>
 <label x="266.7" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -18186,8 +18352,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </segment>
 <segment>
 <pinref part="SV2" gate="-3" pin="S"/>
-<wire x1="264.16" y1="111.76" x2="266.7" y2="114.3" width="0.1524" layer="91" curve="-90"/>
-<wire x1="266.7" y1="114.3" x2="271.78" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="111.76" x2="264.16" y2="114.3" width="0.1524" layer="91" curve="-90"/>
+<wire x1="264.16" y1="114.3" x2="271.78" y2="114.3" width="0.1524" layer="91"/>
 <label x="266.7" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -18199,8 +18365,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </segment>
 <segment>
 <pinref part="SV2" gate="-9" pin="S"/>
-<wire x1="264.16" y1="106.68" x2="266.7" y2="109.22" width="0.1524" layer="91" curve="-90"/>
-<wire x1="266.7" y1="109.22" x2="271.78" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="106.68" x2="264.16" y2="109.22" width="0.1524" layer="91" curve="-90"/>
+<wire x1="264.16" y1="109.22" x2="271.78" y2="109.22" width="0.1524" layer="91"/>
 <label x="266.7" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -18328,11 +18494,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="116.84" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A1" class="0">
+<net name="A1" class="3">
 <segment>
 <pinref part="MC1" gate="G$1" pin="A0"/>
-<wire x1="238.76" y1="172.72" x2="236.22" y2="170.18" width="0.1524" layer="91" curve="90"/>
-<wire x1="236.22" y1="170.18" x2="236.22" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="177.8" x2="236.22" y2="175.26" width="0.1524" layer="91" curve="90"/>
+<wire x1="236.22" y1="175.26" x2="236.22" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="-4" pin="S"/>
@@ -18340,12 +18506,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="121.92" y1="109.22" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
 <label x="116.84" y="109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="226.06" y1="218.44" x2="228.6" y2="220.98" width="0.1524" layer="91" curve="-90"/>
+<wire x1="228.6" y1="220.98" x2="238.76" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="1" pin="2"/>
+<wire x1="238.76" y1="226.06" x2="238.76" y2="220.98" width="0.1524" layer="91"/>
+</segment>
 </net>
-<net name="A2" class="0">
+<net name="A2" class="3">
 <segment>
 <pinref part="MC1" gate="G$1" pin="A1"/>
-<wire x1="236.22" y1="172.72" x2="233.68" y2="170.18" width="0.1524" layer="91" curve="90"/>
-<wire x1="233.68" y1="170.18" x2="233.68" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="177.8" x2="233.68" y2="175.26" width="0.1524" layer="91" curve="90"/>
+<wire x1="233.68" y1="175.26" x2="233.68" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="-10" pin="S"/>
@@ -18353,12 +18525,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="121.92" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
 <label x="116.84" y="104.14" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="226.06" y1="215.9" x2="228.6" y2="218.44" width="0.1524" layer="91" curve="-90"/>
+<wire x1="228.6" y1="218.44" x2="243.84" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="1" pin="3"/>
+<wire x1="243.84" y1="226.06" x2="243.84" y2="218.44" width="0.1524" layer="91"/>
+</segment>
 </net>
-<net name="A3" class="0">
+<net name="A3" class="3">
 <segment>
 <pinref part="MC1" gate="G$1" pin="A2"/>
-<wire x1="233.68" y1="172.72" x2="231.14" y2="170.18" width="0.1524" layer="91" curve="90"/>
-<wire x1="231.14" y1="170.18" x2="231.14" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="177.8" x2="231.14" y2="175.26" width="0.1524" layer="91" curve="90"/>
+<wire x1="231.14" y1="175.26" x2="231.14" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="-16" pin="S"/>
@@ -18366,18 +18544,30 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="121.92" y1="99.06" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
 <label x="116.84" y="99.06" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="226.06" y1="213.36" x2="228.6" y2="215.9" width="0.1524" layer="91" curve="-90"/>
+<wire x1="228.6" y1="215.9" x2="248.92" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="1" pin="4"/>
+<wire x1="248.92" y1="226.06" x2="248.92" y2="215.9" width="0.1524" layer="91"/>
+</segment>
 </net>
-<net name="A4" class="0">
+<net name="A4" class="3">
 <segment>
 <pinref part="MC1" gate="G$1" pin="A3"/>
-<wire x1="231.14" y1="172.72" x2="228.6" y2="170.18" width="0.1524" layer="91" curve="90"/>
-<wire x1="228.6" y1="170.18" x2="228.6" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="177.8" x2="228.6" y2="175.26" width="0.1524" layer="91" curve="90"/>
+<wire x1="228.6" y1="175.26" x2="228.6" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="-22" pin="S"/>
 <wire x1="124.46" y1="96.52" x2="121.92" y2="93.98" width="0.1524" layer="91" curve="-90"/>
 <wire x1="121.92" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
 <label x="116.84" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="226.06" y1="210.82" x2="228.6" y2="213.36" width="0.1524" layer="91" curve="-90"/>
+<wire x1="228.6" y1="213.36" x2="254" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="RN4" gate="1" pin="5"/>
+<wire x1="254" y1="226.06" x2="254" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D4" class="0">
@@ -18632,13 +18822,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,83.82,63.5,IC2D,O,,,,"/>
-<approved hash="101,1,83.82,50.8,IC2E,O,,,,"/>
-<approved hash="101,1,83.82,38.1,IC2F,O,,,,"/>
-<approved hash="104,1,76.2,182.88,U1,VDD,VCC,,,"/>
+<approved hash="101,1,172.72,40.64,IC2D,O,,,,"/>
+<approved hash="101,1,172.72,27.94,IC2E,O,,,,"/>
+<approved hash="101,1,172.72,15.24,IC2F,O,,,,"/>
+<approved hash="104,1,190.5,223.52,U1,VDD,VCC,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
-<approved hash="113,1,18.648,223.52,SV1,,,,,"/>
-<approved hash="113,1,227.732,177.8,SV2,,,,,"/>
+<approved hash="113,1,107.548,228.6,SV1,,,,,"/>
+<approved hash="113,1,275.992,162.56,SV2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
