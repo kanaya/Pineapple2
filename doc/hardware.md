@@ -6,7 +6,7 @@ Pineapple II has followirng ports.
 
 * 4x GeekPort II (Analog and Digital I/O)
 * MIDI In
-* MIDI Out+ (MIDI Out + SPI)
+* MIDI Out+ (MIDI Out + XLED)
 * DC12V In
 * Maintenance (USB)
 
