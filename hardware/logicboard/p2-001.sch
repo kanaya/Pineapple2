@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -17743,7 +17743,6 @@ Based on the following sources:
 <part name="RN3" library="resistor-net" library_urn="urn:adsk.eagle:library:343" deviceset="RN08" device="" package3d_urn="urn:adsk.eagle:package:24977/1" value="4.7k"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X1" device="" package3d_urn="urn:adsk.eagle:package:22485/2" value="GNDPIN"/>
 <part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY24" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="RN4" library="resistor-net" library_urn="urn:adsk.eagle:library:343" deviceset="RN04" device="" package3d_urn="urn:adsk.eagle:package:24976/1" value="10k"/>
 <part name="IC3" library="40xx" library_urn="urn:adsk.eagle:library:80" deviceset="4066" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
@@ -17757,7 +17756,7 @@ Based on the following sources:
 <sheets>
 <sheet>
 <plain>
-<text x="342.9" y="20.32" size="1.778" layer="94">Pineapple II 2.0.2</text>
+<text x="342.9" y="20.32" size="1.778" layer="94">Pineapple II 2.0.3</text>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="63.5" y="223.52" smashed="yes">
@@ -17843,8 +17842,8 @@ Based on the following sources:
 <instance part="SUPPLY15" gate="GND" x="63.5" y="200.66" smashed="yes">
 <attribute name="VALUE" x="61.595" y="197.485" size="1.778" layer="96"/>
 </instance>
-<instance part="P+1" gate="1" x="55.88" y="251.46" smashed="yes">
-<attribute name="VALUE" x="53.34" y="246.38" size="1.778" layer="96" rot="R90"/>
+<instance part="P+1" gate="1" x="55.88" y="254" smashed="yes">
+<attribute name="VALUE" x="53.34" y="248.92" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+2" gate="1" x="121.92" y="167.64" smashed="yes">
 <attribute name="VALUE" x="119.38" y="162.56" size="1.778" layer="96" rot="R90"/>
@@ -18129,8 +18128,8 @@ Based on the following sources:
 <instance part="K1" gate="2" x="63.5" y="233.68" smashed="yes" rot="MR0">
 <attribute name="PART" x="60.96" y="233.68" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="SUPPLY6" gate="G$1" x="73.66" y="248.92" smashed="yes">
-<attribute name="VALUE" x="71.755" y="252.095" size="1.778" layer="96"/>
+<instance part="SUPPLY6" gate="G$1" x="73.66" y="251.46" smashed="yes">
+<attribute name="VALUE" x="71.755" y="254.635" size="1.778" layer="96"/>
 </instance>
 <instance part="T1" gate="G$1" x="76.2" y="220.98" smashed="yes" rot="MR0">
 <attribute name="NAME" x="68.58" y="215.9" size="1.778" layer="95"/>
@@ -18185,12 +18184,9 @@ Based on the following sources:
 <instance part="SUPPLY23" gate="GND" x="124.46" y="10.16" smashed="yes">
 <attribute name="VALUE" x="122.555" y="6.985" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY24" gate="G$1" x="162.56" y="248.92" smashed="yes">
-<attribute name="VALUE" x="160.655" y="252.095" size="1.778" layer="96"/>
-</instance>
-<instance part="RN4" gate="1" x="175.26" y="243.84" smashed="yes">
-<attribute name="NAME" x="172.72" y="246.38" size="1.778" layer="95"/>
-<attribute name="VALUE" x="172.72" y="239.522" size="1.778" layer="96"/>
+<instance part="RN4" gate="1" x="175.26" y="246.38" smashed="yes">
+<attribute name="NAME" x="172.72" y="248.92" size="1.778" layer="95"/>
+<attribute name="VALUE" x="172.72" y="242.062" size="1.778" layer="96"/>
 </instance>
 <instance part="IC3" gate="A" x="160.02" y="233.68" smashed="yes" rot="MR0">
 <attribute name="NAME" x="162.56" y="238.76" size="1.778" layer="95"/>
@@ -18453,7 +18449,7 @@ Based on the following sources:
 <segment>
 <pinref part="SUPPLY6" gate="G$1" pin="VCC"/>
 <pinref part="K1" gate="1" pin="1"/>
-<wire x1="73.66" y1="246.38" x2="73.66" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="248.92" x2="73.66" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="73.66" y1="243.84" x2="73.66" y2="241.3" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="238.76" x2="83.82" y2="243.84" width="0.1524" layer="91"/>
@@ -18475,12 +18471,6 @@ Based on the following sources:
 <wire x1="25.4" y1="198.12" x2="25.4" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="RN3" gate="1" pin="1"/>
 <wire x1="33.02" y1="193.04" x2="25.4" y2="193.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY24" gate="G$1" pin="VCC"/>
-<wire x1="162.56" y1="246.38" x2="162.56" y2="243.84" width="0.1524" layer="91"/>
-<pinref part="RN4" gate="1" pin="1"/>
-<wire x1="162.56" y1="243.84" x2="170.18" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY25" gate="G$1" pin="VCC"/>
@@ -18547,7 +18537,7 @@ Based on the following sources:
 <segment>
 <pinref part="P+1" gate="1" pin="+12V"/>
 <pinref part="K1" gate="2" pin="O"/>
-<wire x1="55.88" y1="248.92" x2="55.88" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="251.46" x2="55.88" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="238.76" x2="58.42" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="238.76" x2="43.18" y2="238.76" width="0.1524" layer="91"/>
@@ -18999,6 +18989,9 @@ Based on the following sources:
 <wire x1="25.4" y1="213.36" x2="27.94" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="213.36" x2="27.94" y2="218.44" width="0.1524" layer="91"/>
 <junction x="27.94" y="218.44"/>
+<pinref part="RN4" gate="1" pin="1"/>
+<wire x1="33.02" y1="246.38" x2="170.18" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="246.38" x2="33.02" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED0K" class="0">
@@ -19122,7 +19115,7 @@ Based on the following sources:
 <net name="N$3" class="0">
 <segment>
 <pinref part="RN4" gate="1" pin="2"/>
-<wire x1="180.34" y1="243.84" x2="180.34" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="246.38" x2="180.34" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="A"/>
 <wire x1="180.34" y1="236.22" x2="172.72" y2="236.22" width="0.1524" layer="91"/>
 </segment>
@@ -19130,7 +19123,7 @@ Based on the following sources:
 <net name="N$4" class="0">
 <segment>
 <pinref part="RN4" gate="1" pin="3"/>
-<wire x1="185.42" y1="243.84" x2="185.42" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="246.38" x2="185.42" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="B" pin="A"/>
 <wire x1="185.42" y1="223.52" x2="172.72" y2="223.52" width="0.1524" layer="91"/>
 </segment>
@@ -19139,7 +19132,7 @@ Based on the following sources:
 <segment>
 <pinref part="RN4" gate="1" pin="4"/>
 <pinref part="IC3" gate="C" pin="A"/>
-<wire x1="190.5" y1="243.84" x2="190.5" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="246.38" x2="190.5" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="210.82" x2="172.72" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -19147,7 +19140,7 @@ Based on the following sources:
 <segment>
 <pinref part="RN4" gate="1" pin="5"/>
 <pinref part="IC3" gate="D" pin="A"/>
-<wire x1="195.58" y1="243.84" x2="195.58" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="246.38" x2="195.58" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="198.12" x2="172.72" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
