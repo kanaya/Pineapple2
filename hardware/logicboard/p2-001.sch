@@ -17757,7 +17757,7 @@ Based on the following sources:
 <sheets>
 <sheet>
 <plain>
-<text x="342.9" y="20.32" size="1.778" layer="94">Pineapple II 2.0.0</text>
+<text x="342.9" y="20.32" size="1.778" layer="94">Pineapple II 2.0.1</text>
 </plain>
 <instances>
 <instance part="C1" gate="G$1" x="63.5" y="223.52" smashed="yes">
