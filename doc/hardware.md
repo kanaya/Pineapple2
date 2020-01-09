@@ -90,38 +90,38 @@ Pineapple II has followirng ports.
 
 ## MPU Pinout
 
-| Pin Group     | Pin        | Arduino Micro | Connect to         | Via                |
-|---------------|------------|---------------|--------------------|--------------------|
-| **MIDI**      | IN         | D0 (RX)       | m5                 | B06, B18           |
-|               | OUT        | D1 (TX)       | M5                 | B11, B16           |
-| **I2C**       | SDA        | D2            | Gx-5               | F05, F11. F17, F23 |
-|               | SCL        | D3 (PWM)      | Gx-6               | F06, F12, F18, F24 |
-| **Monitor**   | 0/G, XLEDg | D13 (PWM)     | LED0, XLEDg        | F25, B12           |
-|               | 1/W        | D4/A6         | LED1               | F27                |
-|               | 2/B, XLEDb | D5 (PWM)      | LED2, XLEDb        | F29, B13           |
-|               | 3/Y        | D8/A8         | LED3               | F31                |
-|               | 4/R, XLEDr | D11 (PWM)     | LED4, XLEDr        | F33, B14           |
-| **Analog**    | 1          | A0            | G1-4/g1-R1         | F04                |
-|               | 2          | A1            | G2-4/g2-R1         | F10                |
-|               | 3          | A2            | G3-4/g3-R1         | F16                |
-|               | 4          | A3            | G4-4/g4-R1         | F22                |
-|               | PULLUP     | D7            | NC                 | NC                 |
-| **Detector**  | 1          | A7/D6 (PMW)   | G1-3/g1-R2         | F03                |
-|               | 2          | A9/D9 (PWM)   | G2-3/g2-R2         | F09                |
-|               | 3          | A10/D10 (PMW) | G3-3/g3-R2         | F15                |
-|               | 4          | A11/D12       | G4-3/g4-R2         | F21                |
-| **Power**     | DC+12V     | VIN           | P1                 | B01                |
-|               | Vout       | ---           | Gx-1/gx-T          | F01, F07, F13, F19 |
-|               | Vcc        | VCC           | M1                 | B07                |
-|               | Vcc+R      | ---           | M4                 | B10                |
-|               | Vdd        | 3V            | ---                | B19                |
-|               | GND        | GND           | Gx-2/gx-S          | F02, F08, F14, F20 |
-|               |            |               | P2, M2             | B02, B04, B08, B20 |
-|               | GND+R      | ---           |                    | F26, F28, F30, F32 |
-|               |            |               |                    | F34                |
-| **Reset**     | RST        | Reset         | SW1                | B03                |
-| **Internal**  | THS, 1-W   | A4            | Thermal sensor, M3 | B09                |
-|               | RLY        | A5            | Thermal breaker    | NC                 |
+| Pin Group     | Pin        | Arduino Micro | Connect to         | Via                | Bus    |
+|---------------|------------|---------------|--------------------|--------------------|--------|
+| **MIDI**      | IN         | D0 (RX)       | m5                 | B06, B18           | SERIAL |
+|               | OUT        | D1 (TX)       | M5                 | B11, B16           | SERIAL |
+| **I2C**       | SDA        | D2            | Gx-5               | F05, F11. F17, F23 | I2C    |
+|               | SCL        | D3 (PWM)      | Gx-6               | F06, F12, F18, F24 | I2C    |
+| **Monitor**   | 0/G, XLEDg | D13 (PWM)     | LED0, XLEDg        | F25, B12           | LED    |
+|               | 1/W        | D4/A6         | LED1               | F27                | LED    |
+|               | 2/B, XLEDb | D5 (PWM)      | LED2, XLEDb        | F29, B13           | LED    |
+|               | 3/Y        | D8/A8         | LED3               | F31                | LED    |
+|               | 4/R, XLEDr | D11 (PWM)     | LED4, XLEDr        | F33, B14           | LED    |
+| **Analog**    | 1          | A0            | G1-4/g1-R1         | F04                | ANALOG |
+|               | 2          | A1            | G2-4/g2-R1         | F10                | ANALOG |
+|               | 3          | A2            | G3-4/g3-R1         | F16                | ANALOG |
+|               | 4          | A3            | G4-4/g4-R1         | F22                | ANALOG |
+|               | PULLUP     | D7            | NC                 | NC                 | ANALOG |
+| **Detector**  | 1          | A7/D6 (PMW)   | G1-3/g1-R2         | F03                | DETECT |
+|               | 2          | A9/D9 (PWM)   | G2-3/g2-R2         | F09                | DETECT |
+|               | 3          | A10/D10 (PMW) | G3-3/g3-R2         | F15                | DETECT |
+|               | 4          | A11/D12       | G4-3/g4-R2         | F21                | DETECT |
+| **Power**     | DC+12V     | VIN           | P1                 | B01                | ---    |
+|               | Vout       | ---           | Gx-1/gx-T          | F01, F07, F13, F19 | ---    |
+|               | Vcc        | VCC           | M1                 | B07                | ---    |
+|               | Vcc+R      | ---           | M4                 | B10                | ---    |
+|               | Vdd        | 3V            | ---                | B19                | ---    |
+|               | GND        | GND           | Gx-2/gx-S          | F02, F08, F14, F20 | ---    |
+|               |            |               | P2, M2             | B02, B04, B08, B20 |        |
+|               | GND+R      | ---           |                    | F26, F28, F30, F32 |        |
+|               |            |               |                    | F34                | ---    |
+| **Reset**     | RST        | Reset         | SW1                | B03                | INTL   |
+| **Internal**  | THS, 1-W   | A4            | Thermal sensor, M3 | B09                | INTL   |
+|               | RLY        | A5            | Thermal breaker    | NC                 | INTL   |
 
 ## Board Connectors
 ### Front Connector (MIL 34p Connector)
@@ -148,7 +148,7 @@ Pineapple II has followirng ports.
 | F18 | SCL        | G3-6       | D3 (PWM)      |
 | F19 | Vout       | G4-1/g4-T  | ---           |
 | F20 | GND        | G4-2/g4-S  | GND           |
-| F21 | Detector 4 | G4-3/g4-R2 | D11 (PWM)     |
+| F21 | Detector 4 | G4-3/g4-R2 | A11/D12       |
 | F22 | Analog 4   | G4-4/g4-R1 | A3            |
 | F23 | SDA        | G4-5       | D2            |
 | F24 | SCL        | G4-6       | D3 (PWM)      |
