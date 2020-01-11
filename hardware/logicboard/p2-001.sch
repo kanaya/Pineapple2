@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19493,7 +19493,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="JP2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="VPULLUP" class="0">
+<net name="VPULLUP" class="2">
 <segment>
 <pinref part="RN4" gate="1" pin="1"/>
 <wire x1="127" y1="243.84" x2="170.18" y2="243.84" width="0.1524" layer="91"/>
@@ -19509,9 +19509,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <approved hash="104,1,68.58,30.48,IC3P,VDD,VCC,,,"/>
 <approved hash="113,1,193.571,130.071,FRAME2,,,,,"/>
 <approved hash="113,1,21.188,228.6,SV1,,,,,"/>
-<approved hash="113,1,253.132,246.38,SV2,,,,,"/>
+<approved hash="113,1,253.132,248.92,SV2,,,,,"/>
 <approved hash="113,1,42.9429,238.986,JP2,,,,,"/>
-<approved hash="113,1,108.176,238.523,JP3,,,,,"/>
+<approved hash="113,1,123.19,244.34,S1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
