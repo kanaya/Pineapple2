@@ -90,38 +90,39 @@ Pineapple II has followirng ports.
 
 ## MPU Pinout
 
-| Pin Group     | Pin        | Arduino Micro | Connect to         | Via                | Bus    |
-|---------------|------------|---------------|--------------------|--------------------|--------|
-| **MIDI**      | IN         | D0 (RX)       | m5                 | B08, B20           | SERIAL |
-|               | OUT        | D1 (TX)       | M5                 | B13, B18           | SERIAL |
-| **I2C**       | SDA        | D2            | Gx-5               | F05, F11. F17, F23 | I2C    |
-|               | SCL        | D3 (PWM)      | Gx-6               | F06, F12, F18, F24 | I2C    |
-| **Monitor**   | 0/G, XLEDg | D13 (PWM)     | LED0, XLEDg        | F25, B14           | LED    |
-|               | 1/W        | D4/A6         | LED1               | F27                | LED    |
-|               | 2/B, XLEDb | D5 (PWM)      | LED2, XLEDb        | F29, B15           | LED    |
-|               | 3/Y        | D8/A8         | LED3               | F31                | LED    |
-|               | 4/R, XLEDr | D11 (PWM)     | LED4, XLEDr        | F33, B16           | LED    |
-| **Analog**    | 1          | A0            | G1-4/g1-R1         | F04                | ANALOG |
-|               | 2          | A1            | G2-4/g2-R1         | F10                | ANALOG |
-|               | 3          | A2            | G3-4/g3-R1         | F16                | ANALOG |
-|               | 4          | A3            | G4-4/g4-R1         | F22                | ANALOG |
-|               | PULLUP     | D7            | NC                 | NC                 | ANALOG |
-| **Detector**  | 1          | A7/D6 (PMW)   | G1-3/g1-R2         | F03                | DETECT |
-|               | 2          | A9/D9 (PWM)   | G2-3/g2-R2         | F09                | DETECT |
-|               | 3          | A10/D10 (PMW) | G3-3/g3-R2         | F15                | DETECT |
-|               | 4          | A11/D12       | G4-3/g4-R2         | F21                | DETECT |
-| **Power**     | DC+12V     | VIN           | P1                 | B01                | ---    |
-|               | DC+12V+R   | ---           | PWRLED             | B05                | ---    |
-|               | Vout       | ---           | Gx-1/gx-T          | F01, F07, F13, F19 | ---    |
-|               | Vcc        | VCC           | M1                 | B09                | ---    |
-|               | Vcc+R      | ---           | M4                 | B12                | ---    |
-|               | GND        | GND           | Gx-2/gx-S          | F02, F08, F14, F20 | ---    |
-|               |            |               | P2, M2             | B02, B04, B06, B10 |        |
-|               | GND+R      | ---           |                    | F26, F28, F30, F32 |        |
-|               |            |               |                    | F34                | ---    |
-| **Reset**     | RST        | Reset         | SW1                | B03                | INTL   |
-| **Internal**  | THS, 1-W   | A4            | Thermal sensor, M3 | B11                | INTL   |
-|               | RLY        | A5            | Thermal breaker    | NC                 | INTL   |
+| Pin Group     | Pin      | Arduino Micro | Connect to         | Via                | Bus    |
+|---------------|----------|---------------|--------------------|--------------------|--------|
+| **MIDI**      | IN       | D0 (RX)       | m5                 | B11, B20           | SERIAL |
+|               | OUT      | D1 (TX)       | M1, M3, M5         | B12, B14, B16      | SERIAL |
+| **I2C**       | SDA      | D2            | Gx-5               | F05, F11. F17, F23 | I2C    |
+|               | SCL      | D3 (PWM)      | Gx-6               | F06, F12, F18, F24 | I2C    |
+| **Monitor**   | 0/W      | D13 (PWM)     | LED0, XLEDg        | F25                | LED    |
+|               | 1/R      | D4/A6         | LED1               | F27                | LED    |
+|               | 2/G      | D5 (PWM)      | LED2, XLEDb        | F29                | LED    |
+|               | 3/B      | D8/A8         | LED3               | F31                | LED    |
+|               | 4/Y      | D11 (PWM)     | LED4, XLEDr        | F33                | LED    |
+| **Analog**    | 1        | A0            | G1-4/g1-R1         | F04                | ANALOG |
+|               | 2        | A1            | G2-4/g2-R1         | F10                | ANALOG |
+|               | 3        | A2            | G3-4/g3-R1         | F16                | ANALOG |
+|               | 4        | A3            | G4-4/g4-R1         | F22                | ANALOG |
+|               | PULLUP   | D7            | NC                 | NC                 | ANALOG |
+| **Detector**  | 1        | A7/D6 (PMW)   | G1-3/g1-R2         | F03                | DETECT |
+|               | 2        | A9/D9 (PWM)   | G2-3/g2-R2         | F09                | DETECT |
+|               | 3        | A10/D10 (PMW) | G3-3/g3-R2         | F15                | DETECT |
+|               | 4        | A11/D12       | G4-3/g4-R2         | F21                | DETECT |
+| **Power**     | DC+12V   | VIN           | P1                 | B01                | ---    |
+|               | DC+12V+R | ---           | PWRLED             | B05                | ---    |
+|               | Vout     | ---           | Gx-1/gx-T          | F01, F07, F13, F19 | ---    |
+|               | Vcc      | VCC           | m1                 | B07                | ---    |
+|               | Vcc+R    | ---           | M4                 | B12                | ---    |
+|               | GND      | GND           | Gx-2/gx-S          | F02, F08, F14, F20 | ---    |
+|               |          |               | P2, M2, m2         | B02, B04, B06, B08 |        |
+|               |          |               |                    | B13                |        |
+|               | GND+R    | ---           |                    | F26, F28, F30, F32 |        |
+|               |          |               |                    | F34                | ---    |
+| **Reset**     | RST      | Reset         | SW1                | B03                | INTL   |
+| **Internal**  | THS, 1-W | A4            | Thermal sensor, M3 | B11                | INTL   |
+|               | RLY      | A5            | Thermal breaker    | NC                 | INTL   |
 
 ## Board Connectors
 ### Front Connector (MIL 34p Connector)
@@ -173,18 +174,17 @@ Pineapple II has followirng ports.
 | B04 | GND              | SW2        | GND           |
 | B05 | Power LED        | PWRLEDA    | ---           |
 | B06 | GND              | PWRLEDK    | GND           |
-| B07 | MIDI IN Send     | m4         | ---           |
-| B08 | MIDI IN Return   | m5         | D0 (RX)       |
-| B09 | Vcc              | M1         | Vcc           |
-| B10 | GND              | M2         | GND           |
-| B11 | 1-W              | M3         | A4            |
-| B12 | MIDI OUT Send    | M4         | ---           |
-| B13 | MIDI OUT Return  | M5         | D1 (TX)       |
-| B14 | XLEDg            | M6         | D13 (PWM)     |
-| B15 | XLEDb            | M7         | D5 (PWM)      |
-| B16 | XLEDr            | M8         | D11 (PWM)     |
+| B07 | Vcc              | m1         | Vcc           |
+| B08 | GND              | m2         | GND           |
+| B09 | NC               | m3         | NC            |
+| B10 | MIDI IN Send     | m4         | ---           |
+| B11 | MIDI IN Return   | m5         | D0 (RX)       |
+| B12 | MIDI TX+         | M1         | D1 (TX)       |
+| B13 | GND              | M2         | GND           |
+| B14 | MIDI TX-         | M3         | D1 (TX)       |
+| B15 | MIDI OUT Send    | M4         | ---           |
+| B16 | MIDI OUT Return  | M5         | D1 (TX)       |
 | B17 | MIDI OUT2 Send   | NC         | ---           |
 | B18 | MIDI OUT2 Return | NC         | D1 (TX)       |
 | B19 | MIDI THRU Send   | NC         | ---           |
 | B20 | MIDI THRU Return | NC         | D0 (RX)       |
-
