@@ -55,24 +55,21 @@ Pineapple II has followirng ports.
 
 | MIDI Pin | Meaning | 1/8 Pin |
 |----------|---------|---------|
-| M1       | Vcc     |         |
+| M1       | TX+     |         |
 | M2       | GND     | Sleeve  |
-| M3       | 1-Wire  |         |
-| M4       | Source  | Ring    |
-| M5       | Drain   | Tip     |
-| M6       | XLEDg   |         |
-| M7       | XLEDb   |         |
-| M8       | XLEDr   |         |
+| M3       | TX-     |         |
+| M4       | Send    | Ring    |
+| M5       | Return  | Tip     |
 
 ## MIDI IN+ (DIN connector)
 
 | MIDI Pin | Meaning | 1/8 Pin |
 |----------|---------|---------|
-| m1       | NC      |         |
-| m2       | NC      |         |
-| m3       | NC      |         |
-| m4       | Source  | Ring    |
-| m5       | Drain   | Tip     |
+| m1       | Vcc     |         |
+| m2       | GND     |         |
+| m3       | Vcc     |         |
+| m4       | Send    | Ring    |
+| m5       | Return  | Tip     |
 
 ## DC Jack
 
