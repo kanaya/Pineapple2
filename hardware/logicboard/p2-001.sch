@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -19156,61 +19156,6 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <junction x="27.94" y="137.16"/>
 </segment>
 </net>
-<net name="L0" class="0">
-<segment>
-<pinref part="MC1" gate="G$1" pin="13"/>
-<wire x1="160.02" y1="160.02" x2="157.48" y2="157.48" width="0.1524" layer="91" curve="90"/>
-<label x="157.48" y="154.94" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="40.64" y1="101.6" x2="25.4" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="-25" pin="S"/>
-<label x="30.48" y="101.6" size="1.778" layer="95"/>
-<wire x1="43.18" y1="104.14" x2="40.64" y2="101.6" width="0.1524" layer="91" curve="-90"/>
-</segment>
-</net>
-<net name="L1" class="0">
-<segment>
-<pinref part="MC1" gate="G$1" pin="4"/>
-<wire x1="134.62" y1="106.68" x2="137.16" y2="109.22" width="0.1524" layer="91" curve="90"/>
-<wire x1="137.16" y1="109.22" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
-<label x="137.16" y="127" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="SV1" gate="-27" pin="S"/>
-<wire x1="40.64" y1="96.52" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
-<label x="30.48" y="96.52" size="1.778" layer="95"/>
-<wire x1="43.18" y1="99.06" x2="40.64" y2="96.52" width="0.1524" layer="91" curve="-90"/>
-</segment>
-</net>
-<net name="L2" class="0">
-<segment>
-<pinref part="SV1" gate="-29" pin="S"/>
-<wire x1="40.64" y1="91.44" x2="25.4" y2="91.44" width="0.1524" layer="91"/>
-<label x="30.48" y="91.44" size="1.778" layer="95"/>
-<wire x1="43.18" y1="93.98" x2="40.64" y2="91.44" width="0.1524" layer="91" curve="-90"/>
-</segment>
-<segment>
-<pinref part="MC1" gate="G$1" pin="5"/>
-<wire x1="137.16" y1="106.68" x2="139.7" y2="109.22" width="0.1524" layer="91" curve="90"/>
-<wire x1="139.7" y1="109.22" x2="139.7" y2="132.08" width="0.1524" layer="91"/>
-<label x="139.7" y="127" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="L3" class="0">
-<segment>
-<pinref part="MC1" gate="G$1" pin="8"/>
-<wire x1="144.78" y1="106.68" x2="147.32" y2="109.22" width="0.1524" layer="91" curve="90"/>
-<wire x1="147.32" y1="109.22" x2="147.32" y2="132.08" width="0.1524" layer="91"/>
-<label x="147.32" y="127" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="SV1" gate="-31" pin="S"/>
-<wire x1="40.64" y1="86.36" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
-<label x="30.48" y="86.36" size="1.778" layer="95"/>
-<wire x1="43.18" y1="88.9" x2="40.64" y2="86.36" width="0.1524" layer="91" curve="-90"/>
-</segment>
-</net>
 <net name="L4" class="0">
 <segment>
 <pinref part="MC1" gate="G$1" pin="11"/>
@@ -19220,9 +19165,8 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 </segment>
 <segment>
 <pinref part="SV1" gate="-33" pin="S"/>
-<wire x1="40.64" y1="81.28" x2="25.4" y2="81.28" width="0.1524" layer="91"/>
-<label x="30.48" y="81.28" size="1.778" layer="95"/>
 <wire x1="43.18" y1="83.82" x2="40.64" y2="81.28" width="0.1524" layer="91" curve="-90"/>
+<wire x1="40.64" y1="81.28" x2="25.4" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A1" class="3">
@@ -19736,6 +19680,57 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <pinref part="SV2" gate="-9" pin="S"/>
 <pinref part="PAD1" gate="P" pin="P"/>
 <wire x1="246.38" y1="208.28" x2="248.92" y2="208.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="L1" class="0">
+<segment>
+<pinref part="MC1" gate="G$1" pin="4"/>
+<wire x1="134.62" y1="106.68" x2="137.16" y2="109.22" width="0.1524" layer="91" curve="90"/>
+<wire x1="137.16" y1="109.22" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
+<label x="137.16" y="127" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="-27" pin="S"/>
+<wire x1="43.18" y1="99.06" x2="40.64" y2="96.52" width="0.1524" layer="91" curve="-90"/>
+<wire x1="40.64" y1="96.52" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="L2" class="0">
+<segment>
+<pinref part="MC1" gate="G$1" pin="5"/>
+<wire x1="137.16" y1="106.68" x2="139.7" y2="109.22" width="0.1524" layer="91" curve="90"/>
+<wire x1="139.7" y1="109.22" x2="139.7" y2="132.08" width="0.1524" layer="91"/>
+<label x="139.7" y="127" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="-29" pin="S"/>
+<wire x1="43.18" y1="93.98" x2="40.64" y2="91.44" width="0.1524" layer="91" curve="-90"/>
+<wire x1="40.64" y1="91.44" x2="25.4" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="L3" class="0">
+<segment>
+<pinref part="MC1" gate="G$1" pin="8"/>
+<wire x1="144.78" y1="106.68" x2="147.32" y2="109.22" width="0.1524" layer="91" curve="90"/>
+<wire x1="147.32" y1="109.22" x2="147.32" y2="132.08" width="0.1524" layer="91"/>
+<label x="147.32" y="127" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="-31" pin="S"/>
+<wire x1="43.18" y1="88.9" x2="40.64" y2="86.36" width="0.1524" layer="91" curve="-90"/>
+<wire x1="40.64" y1="86.36" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="L0" class="0">
+<segment>
+<pinref part="MC1" gate="G$1" pin="13"/>
+<wire x1="160.02" y1="160.02" x2="157.48" y2="157.48" width="0.1524" layer="91" curve="90"/>
+<label x="157.48" y="157.48" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="-25" pin="S"/>
+<wire x1="43.18" y1="104.14" x2="40.64" y2="101.6" width="0.1524" layer="91" curve="-90"/>
+<wire x1="40.64" y1="101.6" x2="25.4" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
