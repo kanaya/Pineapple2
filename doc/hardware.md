@@ -113,7 +113,7 @@ Pineapple II has followirng ports.
 | **Power**     | DC+12V   | VIN           | P1                 | B01                | ---    |
 |               | DC+12V+R | ---           | PWRLED             | B05                | ---    |
 |               | Vout     | ---           | Gx-1/gx-T          | F01, F07, F13, F19 | ---    |
-|               | Vcc      | VCC           | m1                 | B07                | ---    |
+|               | Vcc      | VCC           | m1, m3             | B07, B09           | ---    |
 |               | Vcc+R    | ---           | M4                 | B12                | ---    |
 |               | GND      | GND           | Gx-2/gx-S          | F02, F08, F14, F20 | ---    |
 |               |          |               | P2, M2, m2         | B02, B04, B06, B08 |        |
@@ -176,7 +176,7 @@ Pineapple II has followirng ports.
 | B06 | GND              | PWRLEDK    | GND           |
 | B07 | Vcc              | m1         | Vcc           |
 | B08 | GND              | m2         | GND           |
-| B09 | NC               | m3         | NC            |
+| B09 | Vcc              | m3         | Vcc           |
 | B10 | MIDI IN Send     | m4         | ---           |
 | B11 | MIDI IN Return   | m5         | D0 (RX)       |
 | B12 | MIDI TX+         | M1         | D1 (TX)       |
