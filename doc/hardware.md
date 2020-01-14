@@ -122,6 +122,7 @@ Pineapple II has followirng ports.
 |               | RLY      | A5            | Thermal breaker    | NC                 | INTL   |
 
 ## Board Connectors
+
 ### Front Connector (MIL 34p Connector)
 
 | Pin | Meaning    | Connect to | Arduino Micro |
