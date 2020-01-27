@@ -93,11 +93,11 @@ Pineapple II has followirng ports.
 |               | OUT      | D1 (TX)       | M1, M3, M5         | B12, B14, B16      | SERIAL |
 | **I2C**       | SDA      | D2            | Gx-5               | F05, F11. F17, F23 | I2C    |
 |               | SCL      | D3 (PWM)      | Gx-6               | F06, F12, F18, F24 | I2C    |
-| **Monitor**   | 0/W      | D13 (PWM)     | LED0, XLEDg        | F25                | LED    |
+| **Monitor**   | LED      | D13 (PWM)     | LED0               | B05                | INTL   |
 |               | 1/R      | D4/A6         | LED1               | F27                | LED    |
-|               | 2/G      | D5 (PWM)      | LED2, XLEDb        | F29                | LED    |
+|               | 2/G      | D5 (PWM)      | LED2               | F29                | LED    |
 |               | 3/B      | D8/A8         | LED3               | F31                | LED    |
-|               | 4/Y      | D11 (PWM)     | LED4, XLEDr        | F33                | LED    |
+|               | 4/Y      | D11 (PWM)     | LED4               | F33                | LED    |
 | **Analog**    | 1        | A0            | G1-4/g1-R1         | F04                | ANALOG |
 |               | 2        | A1            | G2-4/g2-R1         | F10                | ANALOG |
 |               | 3        | A2            | G3-4/g3-R1         | F16                | ANALOG |
@@ -151,7 +151,7 @@ Pineapple II has followirng ports.
 | F22 | Analog 4   | G4-4/g4-R1 | A3            |
 | F23 | SDA        | G4-5       | D2            |
 | F24 | SCL        | G4-6       | D3 (PWM)      |
-| F25 | LED0/G     | LED0A      | D13 (PWM)     |
+| F25 | LED0/G     | ---        | ---           |
 | F26 | GND+R      | LED0K      | ---           |
 | F27 | LED1/W     | LED1A      | D4/A6         |
 | F28 | GND+R      | LED1K      | ---           |
@@ -170,8 +170,8 @@ Pineapple II has followirng ports.
 | B02 | GND              | P2         | GND           |
 | B03 | Reset            | SW1        | Reset         |
 | B04 | GND              | SW2        | GND           |
-| B05 | Power LED        | PWRLEDA    | ---           |
-| B06 | GND              | PWRLEDK    | GND           |
+| B05 | LED              | LEDA       | D13           |
+| B06 | GND              | LEDK       | GND           |
 | B07 | Vcc              | m1         | Vcc           |
 | B08 | GND              | m2         | GND           |
 | B09 | Vcc              | m3         | Vcc           |
