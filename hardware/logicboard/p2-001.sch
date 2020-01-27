@@ -19002,7 +19002,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1007,C1017,P20
 <pinref part="IC2" gate="A" pin="O"/>
 </segment>
 </net>
-<net name="+12V" class="2">
+<net name="VIN" class="2">
 <segment>
 <pinref part="MC1" gate="G$1" pin="9V"/>
 <wire x1="121.92" y1="165.1" x2="121.92" y2="157.48" width="0.1524" layer="91"/>
