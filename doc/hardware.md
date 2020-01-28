@@ -100,18 +100,18 @@ Pineapple II has followirng ports.
 | **Reset**     | RST      | Reset         | SW                 | B03                | INTL   |
 | **Power**     | Vin      | VIN           | P1                 | B01                | ---    |
 |               | Vout     | ---           | Gx-1/gx-T          | F01, F07, F13, F19 | ---    |
-|               | Vcc      | VCC           | m1, m3             | B07, B09, X01      | ---    |
+|               | Vcc      | VCC           | m1, m3             | B07, B09, P01      | ---    |
 |               | Vcc+R    | ---           | M4                 | B12                | ---    |
 |               | GND      | GND           | Gx-2/gx-S          | F02, F08, F14, F20 | ---    |
 |               |          |               | P2, M2, m2         | B02, B04, B06, B08 |        |
+|               |          |               |                    | B13, P02           |        |
 |               | GND+R    | ---           |                    | F26                |        |
-|               |          |               |                    | B13, X02           |        |
-| **Display**   | MOSI     | MOSI          |                    | X03                | DSPL   |
-|               | SCLK     | SCLK          |                    | X05                | DSPL   |
-|               | GPIO1    | D4/A6         |                    | X06                | DSPL   |
-|               | GPIO2    | D5 (PWM)      |                    | X07                | DSPL   |
-|               | GPIO3    | D8/A8         |                    | X08                | DSPL   |
-| **Internal**  | THS, 1-W | A4            | Thermal sensor, M3 | B11                | INTL   |
+| **Display**   | MOSI     | MOSI          |                    | X01                | DSPL   |
+|               | SCLK     | SCLK          |                    | X02                | DSPL   |
+|               | GPIO1    | D4/A6         |                    | X04                | DSPL   |
+|               | GPIO2    | D5 (PWM)      |                    | X05                | DSPL   |
+|               | GPIO3    | D8/A8         |                    | X06                | DSPL   |
+| **Internal**  | THS, 1-W | A4            | Thermal sensor     | NC                 | INTL   |
 |               | RLY      | A5            | Thermal breaker    | NC                 | INTL   |
 | **Reserved**  | ---      | D11 (PWM)     |                    | F25                | INDC   |
 |               | SS       | SS            |                    |                    |        |
@@ -179,11 +179,9 @@ Pineapple II has followirng ports.
 
 | Pin | Meaning |
 |-----|---------|
-| X01 | Vcc     |
-| X02 | GND     |
-| X03 | MOSI    |
-| X04 | MISO    |
-| X05 | SCLK    |
-| X06 | SSEL    |
-| X07 | GPIO1   |
-| X08 | GPIO2   |
+| X01 | MOSI    |
+| X02 | MISO    |
+| X03 | SCLK    |
+| X04 | GPIO1   |
+| X05 | GPIO2   |
+| X06 | GPIO3   |
