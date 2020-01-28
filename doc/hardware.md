@@ -34,12 +34,14 @@ Pineapple II has followirng ports.
 | 5      | I2C SDA       | Digital I/O      |
 | 6      | I2C SCL       | Digital I/O      |
 
-### Reset SW/LED
+### Maintenance Port (2.5mm phone jack)
 
-| SW/LED | Meaning                          |
-|--------|----------------------------------|
-| LED    | Status                           |
-| SW     | Reset (double-push to boot-load) |
+| Pinout | Meaning |
+|--------|---------|
+| Tip    | D-      |
+| Ring 1 | D+      |
+| Ring 2 | GND     |
+| Sleeve | Vbus    |
 
 ## Back Panel
 
@@ -70,14 +72,12 @@ Pineapple II has followirng ports.
 | P1      | DC +12V |
 | P2      | GND     |
 
-### Maintenance Port (2.5mm phone jack)
+### Reset SW/LED
 
-| Pinout | Meaning |
-|--------|---------|
-| Tip    | D-      |
-| Ring 1 | D+      |
-| Ring 2 | GND     |
-| Sleeve | Vbus    |
+| SW/LED | Meaning                          |
+|--------|----------------------------------|
+| LED    | Status                           |
+| SW     | Reset (double-push to boot-load) |
 
 ## MPU Pinout
 
@@ -96,29 +96,28 @@ Pineapple II has followirng ports.
 |               | 2        | A9/D9 (PWM)   | G2-3/g2-R2         | F09                | DTCT   |
 |               | 3        | A10/D10 (PMW) | G3-3/g3-R2         | F15                | DTCT   |
 |               | 4        | A11/D12       | G4-3/g4-R2         | F21                | DTCT   |
-| **Monitor**   | LED      | D13 (PWM)     | LED                | B05                | INTL   |
-| **Reset**     | RST      | Reset         | SW                 | B03                | INTL   |
+| **Indicator** | LED      | D11 (PWM)     | Front LED          | F25                | ---    |
+| **Monitor**   | SWLED    | D13 (PWM)     | SWLED              | B05                | INTL   |
+| **Reset**     | RST      | Reset         | SWLED              | B03                | INTL   |
 | **Power**     | Vin      | VIN           | P1                 | B01                | ---    |
 |               | Vout     | ---           | Gx-1/gx-T          | F01, F07, F13, F19 | ---    |
 |               | Vcc      | VCC           | m1, m3             | B07, B09, P01      | ---    |
 |               | Vcc+R    | ---           | M4                 | B12                | ---    |
 |               | GND      | GND           | Gx-2/gx-S          | F02, F08, F14, F20 | ---    |
 |               |          |               | P2, M2, m2         | B02, B04, B06, B08 |        |
-|               |          |               |                    | B13, P02           |        |
+|               |          |               |                    | B13, P02, X07      |        |
 |               | GND+R    | ---           |                    | F26                |        |
 | **Display**   | MOSI     | MOSI          |                    | X01                | DSPL   |
 |               | SCLK     | SCLK          |                    | X02                | DSPL   |
 |               | GPIO1    | D4/A6         |                    | X04                | DSPL   |
 |               | GPIO2    | D5 (PWM)      |                    | X05                | DSPL   |
 |               | GPIO3    | D8/A8         |                    | X06                | DSPL   |
-| **Internal**  | THS, 1-W | A4            | Thermal sensor     | NC                 | INTL   |
+| **Internal**  | THS      | A4            | Thermal sensor     | NC                 | INTL   |
 |               | RLY      | A5            | Thermal breaker    | NC                 | INTL   |
-| **Reserved**  | ---      | D11 (PWM)     |                    | F25                | INDC   |
-|               | SS       | SS            |                    |                    |        |
 
 ## Board Connectors
 
-### Front Connector (MIL 34p Connector)
+### Front Connector (MIL 26p Connector)
 
 | Pin | Meaning    | Connect to | Arduino Micro |
 |-----|------------|------------|---------------|
@@ -185,3 +184,4 @@ Pineapple II has followirng ports.
 | X04 | GPIO1   |
 | X05 | GPIO2   |
 | X06 | GPIO3   |
+| X07 | GND     |
