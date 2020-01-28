@@ -69,8 +69,8 @@ Pineapple II has followirng ports.
 
 | DC Jack | Meaning |
 |---------|---------|
-| P1      | DC +12V |
-| P2      | GND     |
+| PWR1    | DC +12V |
+| PWR2    | GND     |
 
 ### Reset SW/LED
 
@@ -97,8 +97,8 @@ Pineapple II has followirng ports.
 |               | 3        | A10/D10 (PMW) | G3-3/g3-R2         | F15                | DTCT   |
 |               | 4        | A11/D12       | G4-3/g4-R2         | F21                | DTCT   |
 | **Indicator** | LED      | D11 (PWM)     | Front LED          | F25                | ---    |
-| **Monitor**   | SWLED    | D13 (PWM)     | SWLED              | B05                | INTL   |
-| **Reset**     | RST      | Reset         | SWLED              | B03                | INTL   |
+| **Monitor**   | SWLED    | D13 (PWM)     | Back LED           | B05                | INTL   |
+| **Reset**     | RST      | Reset         | SW                 | B03                | INTL   |
 | **Power**     | Vin      | VIN           | P1                 | B01                | ---    |
 |               | Vout     | ---           | Gx-1/gx-T          | F01, F07, F13, F19 | ---    |
 |               | Vcc      | VCC           | m1, m3             | B07, B09, P01      | ---    |
@@ -109,9 +109,9 @@ Pineapple II has followirng ports.
 |               | GND+R    | ---           |                    | F26                |        |
 | **Display**   | MOSI     | MOSI          |                    | X01                | DSPL   |
 |               | SCLK     | SCLK          |                    | X02                | DSPL   |
-|               | GPIO1    | D4/A6         |                    | X04                | DSPL   |
-|               | GPIO2    | D5 (PWM)      |                    | X05                | DSPL   |
-|               | GPIO3    | D8/A8         |                    | X06                | DSPL   |
+|               | GPIO1    | D4/A6         |                    | X03                | DSPL   |
+|               | GPIO2    | D5 (PWM)      |                    | X04                | DSPL   |
+|               | GPIO3    | D8/A8         |                    | X05                | DSPL   |
 | **Internal**  | THS      | A4            | Thermal sensor     | NC                 | INTL   |
 |               | RLY      | A5            | Thermal breaker    | NC                 | INTL   |
 
@@ -153,8 +153,8 @@ Pineapple II has followirng ports.
 
 | Pin | Meaning          | Connect to | Arduino Micro |
 |-----|------------------|------------|---------------|
-| B01 | DC12V            | P1         | Vin           |
-| B02 | GND              | P2         | GND           |
+| B01 | DC12V            | PWR1       | Vin           |
+| B02 | GND              | PWR2       | GND           |
 | B03 | Reset            | SW1        | Reset         |
 | B04 | GND              | SW2        | GND           |
 | B05 | LED              | LEDA       | D13           |
@@ -179,9 +179,7 @@ Pineapple II has followirng ports.
 | Pin | Meaning |
 |-----|---------|
 | X01 | MOSI    |
-| X02 | MISO    |
-| X03 | SCLK    |
-| X04 | GPIO1   |
-| X05 | GPIO2   |
-| X06 | GPIO3   |
-| X07 | GND     |
+| X02 | SCLK    |
+| X03 | GPIO1   |
+| X04 | GPIO2   |
+| X05 | GPIO3   |
