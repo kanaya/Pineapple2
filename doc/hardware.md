@@ -87,17 +87,17 @@ Pineapple II has followirng ports.
 |               | OUT      | D1 (TX)       | M1, M3, M5         | B12, B14, B16      | SERL   |
 | **I2C**       | SDA      | D2            | Gx-5               | F05, F11. F17, F23 | ISQC   |
 |               | SCL      | D3 (PWM)      | Gx-6               | F06, F12, F18, F24 | ISQC   |
-| **Analog**    | 1        | A0            | G1-4/g1-R1         | F04                | ANLG   |
-|               | 2        | A1            | G2-4/g2-R1         | F10                | ANLG   |
-|               | 3        | A2            | G3-4/g3-R1         | F16                | ANLG   |
-|               | 4        | A3            | G4-4/g4-R1         | F22                | ANLG   |
-|               | PULLUP   | D7            | NC                 | NC                 | ANLG   |
-| **Detector**  | 1        | A7/D6 (PMW)   | G1-3/g1-R2         | F03                | DTCT   |
-|               | 2        | A9/D9 (PWM)   | G2-3/g2-R2         | F09                | DTCT   |
-|               | 3        | A10/D10 (PMW) | G3-3/g3-R2         | F15                | DTCT   |
-|               | 4        | A11/D12       | G4-3/g4-R2         | F21                | DTCT   |
-| **Indicator** | LED      | D11 (PWM)     | Front LED          | F25                | ---    |
-| **Monitor**   | SWLED    | D13 (PWM)     | Back LED           | B05                | INTL   |
+| **Analog**    | A1       | A0            | G1-4/g1-R1         | F04                | ANLG   |
+|               | A2       | A1            | G2-4/g2-R1         | F10                | ANLG   |
+|               | A3       | A2            | G3-4/g3-R1         | F16                | ANLG   |
+|               | A4       | A3            | G4-4/g4-R1         | F22                | ANLG   |
+|               | PULLUP   | A4            | NC                 | NC                 | ANLG   |
+| **Detector**  | D1       | D6/A7 (PMW)   | G1-3/g1-R2         | F03                | DTCT   |
+|               | D2       | D9/A9 (PWM)   | G2-3/g2-R2         | F09                | DTCT   |
+|               | D3       | D10/A10 (PMW) | G3-3/g3-R2         | F15                | DTCT   |
+|               | D4       | D12/A11       | G4-3/g4-R2         | F21                | DTCT   |
+| **Indicator** | FLED     | D11 (PWM)     | Front LED          | F25                | ---    |
+| **Monitor**   | LED      | D13 (PWM)     | Back LED           | B05                | INTL   |
 | **Reset**     | RST      | Reset         | SW                 | B03                | INTL   |
 | **Power**     | Vin      | VIN           | P1                 | B01                | ---    |
 |               | Vout     | ---           | Gx-1/gx-T          | F01, F07, F13, F19 | ---    |
@@ -106,14 +106,14 @@ Pineapple II has followirng ports.
 |               | GND      | GND           | Gx-2/gx-S          | F02, F08, F14, F20 | ---    |
 |               |          |               | P2, M2, m2         | B02, B04, B06, B08 |        |
 |               |          |               |                    | B13, P02, X07      |        |
-|               | GND+R    | ---           |                    | F26                |        |
-| **Display**   | MOSI     | MOSI          |                    | X01                | DSPL   |
-|               | SCLK     | SCLK          |                    | X02                | DSPL   |
-|               | GPIO1    | D4/A6         |                    | X03                | DSPL   |
-|               | GPIO2    | D5 (PWM)      |                    | X04                | DSPL   |
-|               | GPIO3    | D8/A8         |                    | X05                | DSPL   |
-| **Internal**  | THS      | A4            | Thermal sensor     | NC                 | INTL   |
-|               | RLY      | A5            | Thermal breaker    | NC                 | INTL   |
+|               | GND+R    | ---           |                    | F26                | ---    |
+| **Display**   | MOSI     | MOSI          | Display 1          | X01                | DSPL   |
+|               | SCLK     | SCLK          | Display 2          | X02                | DSPL   |
+|               | GPIO1    | D5 (PWM)      | Display 3          | X03                | DSPL   |
+|               | GPIO2    | D7            | Display 4          | X04                | DSPL   |
+|               | GPIO3    | D8/A8         | Display 5          | X05                | DSPL   |
+| **Internal**  | THS      | A5            | Thermal sensor     | NC                 | INTL   |
+|               | RLY      | A6/D4         | Thermal breaker    | NC                 | INTL   |
 
 ## Board Connectors
 
@@ -145,8 +145,8 @@ Pineapple II has followirng ports.
 | F22 | Analog 4   | G4-4/g4-R1 | A3            |
 | F23 | SDA        | G4-5       | D2            |
 | F24 | SCL        | G4-6       | D3 (PWM)      |
-| F25 | Indicator  |            | D11 (PWM)     |
-| F26 | GND+R      |            | ---           |
+| F25 | Indicator  | FLED A     | D11 (PWM)     |
+| F26 | GND+R      | FLED K     | ---           |
 
 
 ### Back Connector (MIL 20p Connector)
@@ -174,7 +174,7 @@ Pineapple II has followirng ports.
 | B19 | MIDI THRU Send   | NC         | ---           |
 | B20 | MIDI THRU Return | NC         | D0 (RX)       |
 
-### X Connector
+### Top Connector
 
 | Pin | Meaning |
 |-----|---------|
@@ -183,3 +183,11 @@ Pineapple II has followirng ports.
 | X03 | GPIO1   |
 | X04 | GPIO2   |
 | X05 | GPIO3   |
+
+### Power Connector
+
+| Pin | Meaning |
+|-----|---------|
+| P01 | Vcc     |
+| P02 | GND     |
+| P03 | Vdd     |
