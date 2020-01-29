@@ -81,39 +81,39 @@ Pineapple II has followirng ports.
 
 ## MPU Pinout
 
-| Pin Group     | Pin      | Arduino Micro | Connect to         | Via                | Bus    |
-|---------------|----------|---------------|--------------------|--------------------|--------|
-| **MIDI**      | IN       | D0 (RX)       | m5                 | B11, B20           | SERL   |
-|               | OUT      | D1 (TX)       | M1, M3, M5         | B12, B14, B16      | SERL   |
-| **I2C**       | SDA      | D2            | Gx-5               | F05, F11. F17, F23 | ISQC   |
-|               | SCL      | D3 (PWM)      | Gx-6               | F06, F12, F18, F24 | ISQC   |
-| **Analog**    | A1       | A0            | G1-4/g1-R1         | F04                | ANLG   |
-|               | A2       | A1            | G2-4/g2-R1         | F10                | ANLG   |
-|               | A3       | A2            | G3-4/g3-R1         | F16                | ANLG   |
-|               | A4       | A3            | G4-4/g4-R1         | F22                | ANLG   |
-|               | PULLUP   | A4            | NC                 | NC                 | ANLG   |
-| **Detector**  | D1       | D6/A7 (PMW)   | G1-3/g1-R2         | F03                | DTCT   |
-|               | D2       | D9/A9 (PWM)   | G2-3/g2-R2         | F09                | DTCT   |
-|               | D3       | D10/A10 (PMW) | G3-3/g3-R2         | F15                | DTCT   |
-|               | D4       | D12/A11       | G4-3/g4-R2         | F21                | DTCT   |
-| **Indicator** | FLED     | D11 (PWM)     | Front LED          | F25                | ---    |
-| **Monitor**   | LED      | D13 (PWM)     | Back LED           | B05                | INTL   |
-| **Reset**     | RST      | Reset         | SW                 | B03                | INTL   |
-| **Power**     | Vin      | VIN           | P1                 | B01                | ---    |
-|               | Vout     | ---           | Gx-1/gx-T          | F01, F07, F13, F19 | ---    |
-|               | Vcc      | VCC           | m1, m3             | B07, B09, P01      | ---    |
-|               | Vcc+R    | ---           | M4                 | B12                | ---    |
-|               | GND      | GND           | Gx-2/gx-S          | F02, F08, F14, F20 | ---    |
-|               |          |               | P2, M2, m2         | B02, B04, B06, B08 |        |
-|               |          |               |                    | B13, P02, X07      |        |
-|               | GND+R    | ---           |                    | F26                | ---    |
-| **Display**   | MOSI     | MOSI          | Display 1          | X01                | DSPL   |
-|               | SCLK     | SCLK          | Display 2          | X02                | DSPL   |
-|               | GPIO1    | D5 (PWM)      | Display 3          | X03                | DSPL   |
-|               | GPIO2    | D7            | Display 4          | X04                | DSPL   |
-|               | GPIO3    | D8/A8         | Display 5          | X05                | DSPL   |
-| **Internal**  | THS      | A5            | Thermal sensor     | NC                 | INTL   |
-|               | RLY      | A6/D4         | Thermal breaker    | NC                 | INTL   |
+| Pin Group     | Pin      | Arduino Micro | Connect to         | Via                | Bus    | MKR  |
+|---------------|----------|---------------|--------------------|--------------------|--------|------|
+| **MIDI**      | IN       | D0 (RX)       | m5                 | B11, B20           | SERL   | D13  |
+|               | OUT      | D1 (TX)       | M1, M3, M5         | B12, B14, B16      | SERL   | D14  |
+| **I2C**       | SDA      | D2            | Gx-5               | F05, F11. F17, F23 | ISQC   | D11  |
+|               | SCL      | D3 (PWM)      | Gx-6               | F06, F12, F18, F24 | ISQC   | D12~ |
+| **Analog**    | A1       | A0            | G1-4/g1-R1         | F04                | ANLG   | A0   |
+|               | A2       | A1            | G2-4/g2-R1         | F10                | ANLG   | A1   |
+|               | A3       | A2            | G3-4/g3-R1         | F16                | ANLG   | A2   |
+|               | A4       | A3            | G4-4/g4-R1         | F22                | ANLG   | A3~  |
+|               | PULLUP   | A4            | NC                 | NC                 | ANLG   | A4~  |
+| **Detector**  | D1       | D6/A7 (PMW)   | G1-3/g1-R2         | F03                | DTCT   | D0~  |
+|               | D2       | D9/A9 (PWM)   | G2-3/g2-R2         | F09                | DTCT   | D1~  |
+|               | D3       | D10/A10 (PMW) | G3-3/g3-R2         | F15                | DTCT   | D2~  |
+|               | D4       | D12/A11       | G4-3/g4-R2         | F21                | DTCT   | D3~  |
+| **Indicator** | FLED     | D11 (PWM)     | Front LED          | F25                | ---    | D4~  |
+| **Monitor**   | LED      | D13 (PWM)     | Back LED           | B05                | INTL   | ---  |
+| **Reset**     | RST      | Reset         | SW                 | B03                | INTL   | RST  |
+| **Power**     | Vin      | VIN           | P1                 | B01                | ---    | VIN  |
+|               | Vout     | ---           | Gx-1/gx-T          | F01, F07, F13, F19 | ---    | ---  |
+|               | Vcc      | VCC           | m1, m3             | B07, B09, P01      | ---    | ---  |
+|               | Vcc+R    | ---           | M4                 | B12                | ---    | ---  |
+|               | GND      | GND           | Gx-2/gx-S          | F02, F08, F14, F20 | ---    | GND  |
+|               |          |               | P2, M2, m2         | B02, B04, B06, B08 |        |      |
+|               |          |               |                    | B13, P02, X07      |        |      |
+|               | GND+R    | ---           |                    | F26                | ---    |      |
+| **Display**   | MOSI     | MOSI          | Display 1          | X01                | DSPL   | D8~  |
+|               | SCLK     | SCLK          | Display 2          | X02                | DSPL   | D9   |
+|               | GPIO1    | D5 (PWM)      | Display 3          | X03                | DSPL   | D5~  |
+|               | GPIO2    | D7            | Display 4          | X04                | DSPL   | D6~  |
+|               | GPIO3    | D8/A8         | Display 5          | X05                | DSPL   | D7~  |
+| **Internal**  | THS      | A5            | Thermal sensor     | NC                 | INTL   | A5   |
+|               | RLY      | A6/D4         | Thermal breaker    | NC                 | INTL   | A6   |
 
 ## Board Connectors
 
